@@ -1,0 +1,27 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3916400, 2020-06-19T11:39:44-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: StingerFit-Light by Zetafonts
+ * URL: https://www.myfonts.com/fonts/zetafonts/stinger/fit-light/
+ * Copyright: Copyright © 2020 by Cosimo Lorenzo Pancini. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+
+  
+@font-face {
+  font-family: 'StingerFit-Light';
+  src: url('webFonts/StingerFit-Light/font.woff2') format('woff2'), url('webFonts/StingerFit-Light/font.woff') format('woff');
+}
+
