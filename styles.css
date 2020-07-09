@@ -68,6 +68,15 @@ hr {
   width: 100%;
 }
 
+@media screen and (max-width: 599px) {
+  #title {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+}
+
 .title-div {
   background-color: #F8F2F2;
   height: 700px;
