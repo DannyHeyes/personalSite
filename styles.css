@@ -53,7 +53,8 @@ hr {
 }
 
 
-/* Title Div */
+/* --- Title Div --- */
+
 
 #title {
   width: 100%;
@@ -96,6 +97,13 @@ hr {
   top: 25%;
   right: 25%;
   opacity: 0.9;
+}
+
+@media screen and (max-width: 599px) {
+  .profile-image {
+    visibility: hidden;
+  }
+
 }
 
 
