@@ -25,9 +25,7 @@ hr {
   }
 }
 
-
-
-/* Nav Bar */
+/* --- Nav Bar --- */
 
 .navbar {
   background-color: #F8F2F2;
@@ -63,7 +61,6 @@ hr {
 
 /* --- Title Div --- */
 
-
 #title {
   width: 100%;
 }
@@ -74,6 +71,7 @@ hr {
   }
   body {
     width: 100%;
+    overflow-x: hidden;
   }
 }
 
