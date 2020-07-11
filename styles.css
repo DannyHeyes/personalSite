@@ -151,7 +151,7 @@ hr {
 	font-size:15px;
   letter-spacing: 1.5px;
 	padding:20px 30px;
-	text-decoration:none;
+	text-decoration: none;
   position: relative;
   top: 30px;
   left: 15%;
@@ -165,7 +165,7 @@ hr {
 .hire-me-today:active {
 	position:relative;
 	top: 30px;
-  left: 10%;
+  left: 15%;
 }
 
     /* viewport iphone */
@@ -282,6 +282,6 @@ hr {
 
 .CTA-button:active {
   position:relative;
-	top: 30px;
-  left: 10%;
+	top: 180px;
+  left: 45%;
 }
