@@ -10,20 +10,18 @@ hr {
   border-style: dotted none none none;
   border-width: 10px;
   width: 8%;
-  position: relative;
-  top: 190px;
   border-color: #291515;
   padding-top: 30px;
   z-index: 1;
 }
 
-/* viewport phone */
-@media screen and (max-width: 599px) {
-  hr {
-    top: 110px;
-    padding-top: 10px;
-  }
-}
+    /* viewport phone */
+    @media screen and (max-width: 599px) {
+      hr {
+        top: 110px;
+        padding-top: 10px;
+      }
+    }
 
 /* --- Nav Bar --- */
 
@@ -61,19 +59,16 @@ hr {
 
 /* --- Title Div --- */
 
+
 #title {
   width: 100%;
 }
 
-@media screen and (max-width: 599px) {
-  #title {
-    width: 100%;
-  }
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-}
+    @media screen and (max-width: 599px) {
+      #title {
+        width: 100%;
+      }
+    }
 
 .title-div {
   background-color: #F8F2F2;
@@ -81,6 +76,15 @@ hr {
   width: 100%;
   position: relative;
 }
+
+/* viewport phone */
+
+    @media screen and (max-width: 599px) {
+      .title-div {
+        height: 500px;
+        width: 100%;
+      }
+    }
 
 .main-title {
   font-size: 100px;
@@ -105,20 +109,20 @@ hr {
   padding-bottom: 50px;
 }
 
-/* viewport phone */
-@media screen and (max-width: 599px) {
-  .main-title {
-    font-size: 80px;
-    padding-top: 70px;
-    left: 8%;
-  }
-  .main-sub {
-    font-size: 30px;
-    line-height: 1.5;
-    width: 80%;
-    left: 8%;
-  }
-}
+    /* viewport phone */
+    @media screen and (max-width: 599px) {
+      .main-title {
+        font-size: 80px;
+        padding-top: 70px;
+        left: 8%;
+      }
+      .main-sub {
+        font-size: 30px;
+        line-height: 1.5;
+        width: 80%;
+        left: 8%;
+      }
+    }
 
 .profile-image {
   width: 60%;
@@ -129,12 +133,12 @@ hr {
   opacity: 0.9;
 }
 
-/* viewport phone */
-@media screen and (max-width: 599px) {
-  .profile-image {
-    visibility: hidden;
-  }
-}
+    /* viewport phone */
+    @media screen and (max-width: 599px) {
+      .profile-image {
+        visibility: hidden;
+      }
+    }
 
 .hire-me-today {
 	background-color:#f8f2f2;
@@ -164,14 +168,20 @@ hr {
   left: 10%;
 }
 
-/* viewport iphone */
-@media screen and (max-width: 599px) {
-  .hire-me-today {
-    top: 20%;
-    left: 8%;
+    /* viewport iphone */
+    @media screen and (max-width: 599px) {
+      .hire-me-today {
+        top: 20%;
+        left: 8%;
 
-  }
+      }
+    }
+
+.title-hr {
+  position: relative;
+  top: 190px;
 }
+
 
 /* What I Do */
 
@@ -183,6 +193,7 @@ hr {
   background-color: #F8F2F2;
   height: 700px;
   position: relative;
+  width: 100%;
 }
 
 .WID-title {
@@ -190,7 +201,7 @@ hr {
   font-weight: 600;
   font-size: 60px;
   position: relative;
-  top: 160px;
+  top: 130px;
   width: 60%;
   padding: 25px 0;
 }
@@ -198,15 +209,79 @@ hr {
 .coding-illustration {
   width: 80%;
   position: relative;
-  top: 40px;
+  top: 30px;
   left: 10%;
 }
 
 .WID-disc {
   position: relative;
-  top: 190px;
+  top: 160px;
   width: 60%;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 22px;
   line-height: 1.9;
+  color: #7E8B8B;
+}
+
+.WID-hr {
+  position: relative;
+  top: 80px;
+}
+
+/* Call To Action Section */
+
+#CTA {
+  width: 100%;
+}
+
+.CTA-div {
+  background-color: #F8F2F2;
+  height: 500px;
+}
+
+.cta-head {
+  font-family: 'StingerFit-Light';
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  top: 130px;
+}
+
+.cta-text {
+  color: #7E8B8B;
+  font-family: 'Noto Sans JP';
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  top: 150px;
+}
+
+.CTA-button {
+  background-color:#f8f2f2;
+	border-radius:5px;
+	border:1px solid #291515;
+	display:inline-block;
+	cursor:pointer;
+	color:#291515;
+	font-family: 'Oswald', sans-serif;
+	font-size:15px;
+  letter-spacing: 1.5px;
+	padding:20px 30px;
+	text-decoration:none;
+  position: relative;
+  top: 180px;
+  left: 45%;
+}
+
+.CTA-button:hover {
+  background-color:#EAD7D7;
+  color: #291515;
+  text-decoration: none;
+}
+
+.CTA-button:active {
+  position:relative;
+	top: 30px;
+  left: 10%;
 }
