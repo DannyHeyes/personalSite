@@ -1,0 +1,66 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* Navbar Style */
+
+.navbar {
+  background-color: #F8F2F2;
+}
+
+.navbar-brand {
+  color: #291515;
+  font-family: 'StingerFit-Light';
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbar-brand:hover {
+  color: #D1A9A9;
+}
+
+.nav-item {
+  text-align: right;
+  margin: 0 20px;
+}
+
+.nav-link {
+  color: #291515;
+  font-family: 'StingerFit-Light';
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  color: #D1A9A9;
+  cursor: pointer;
+}
+
+/* About Content */
+
+.about-div {
+  height: 700px;
+  width: 100%;
+  background-color: #F8F2F2;
+}
+
+.about-text {
+  width: 70%;
+  font-family: 'Noto Sans JP';
+  line-height: 1.9;
+  position: relative;
+  top: 35%;
+  left: 8%;
+}
+
+.about-img {
+  width: 50%;
+  box-shadow: 1px 0 10px #1D4972;
+  position: relative;
+  left: 38%;
+  top: 25%;
+}
