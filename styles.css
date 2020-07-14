@@ -225,7 +225,7 @@ hr {
 
 .WID-hr {
   position: relative;
-  top: 80px;
+  top: 60px;
 }
 
 /* Call To Action Section */
@@ -306,5 +306,5 @@ hr {
   margin: 20px;
   width: 30px;
   position: relative;
-  left: 39.5%;
+  left: 39%;
 }
