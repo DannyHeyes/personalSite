@@ -98,7 +98,7 @@ a.text:hover:before {
   }
 }
 
-@media only screen and (min-width: 319px) and (max-width: 426px) {
+@media only screen and (min-width: 319px) and (max-width: 450px) {
   .main-image {
     height: 50vh;
   }
