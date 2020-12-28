@@ -1,0 +1,105 @@
+
+body {
+  background-color: #F2F7F5;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-image {
+  height: 70vh;
+  background: url('../images/comingSoonCropped.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 15vh;
+  right: 2vw;
+
+}
+
+.title {
+  position: relative;
+  left: 3vw;
+  top: 26vh;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 5rem;
+  font-weight: bolder;
+  width: 80%;
+  color: #00473E;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #475D5B;
+  position: relative;
+  top: 30vh;
+  left: 3vw;
+  line-height: 1.9;
+}
+
+a.text {
+  position: relative;
+  top: 34vh;
+  text-decoration: none;
+  color: #475D5B;
+}
+
+a.text:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #475D5B;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+a.text:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.line-break {
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 319px) and (max-width: 991px) {
+  .main-image {
+    position: relative;
+    top: 3vh;
+    left: 0;
+  }
+
+  .title {
+    position: relative;
+    top: 5vh;
+    left: 0;
+  }
+
+  .text {
+    width: 80%;
+    position: relative;
+    top: 6vh;
+    left: 0;
+  }
+
+  a.text {
+    position: relative;
+    top: 7vh;
+    padding-bottom: 40px;
+    line-height: 1.9;
+  }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 426px) {
+  .main-image {
+    height: 50vh;
+  }
+}
