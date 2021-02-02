@@ -1,6 +1,20 @@
 
 body {
   background-color: #F2F7F5;
+  animation: fadeInAnimation ease 2s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+0% {
+    opacity: 0;
+    transform: translateY(60px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+ }
 }
 
 .container {
@@ -101,5 +115,31 @@ a.text:hover:before {
 @media only screen and (min-width: 319px) and (max-width: 450px) {
   .main-image {
     height: 50vh;
+    width: 90vw;
+    position: relative;
+    left: 0;
+  }
+
+  .main-text {
+    width: 95vw;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .container {
+    overflow-x: hidden;
+  }
+}
+
+@keyframes loadingFade {
+  from{
+    opacity: 0;
+    transform: translateY(50px)
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
