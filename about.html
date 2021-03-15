@@ -4,98 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>About</title>
-
-  <!-- BootStrap Link -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-  <!-- Style Link -->
-  <link rel="stylesheet" href="about.css">
-
-  <!-- Fonts link -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="Fonts/StingerWebFont/StingerWebFont.css">
-
+  <!-- Stylesheet Link  -->
+  <link rel="stylesheet" href="css/about.css">
+  <title>About US</title>
 </head>
 
 <body>
 
-  <!-- Nav Bar -->
-
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="index.html">dh.</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="work.html">Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo-removebg-preview.png" alt="logo">
+      </a>
     </div>
+
+    <ul class="nav-links">
+      <li>
+        <a href="about.html">about us</a>
+      </li>
+      <li>
+        <a href="contact.html">contact</a>
+      </li>
+    </ul>
+
+    <div class="burger">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+    </div>
+
   </nav>
 
-  <!-- About Content -->
-
-  <section id="about">
-
-    <div class="about-div">
-      <div>
-        <div class="row">
-          <div class="col-lg-5">
-            <img class="about-img" src="images/img_000072.jpeg" alt="danny.img">
-          </div>
-          <div class="col-lg-7">
-            <p class="about-text">This is me, and this is my dog, Fina. <br>
-              She's a Podenco. She was rescued from Spain. I'm not from Spain, I'm from Portsmouth on the sunny South Coast of England. We live in Berlin, Germany. <br>
-              I moved to Berlin to play rugby (weird, I know) and I stayed to manage a specialty coffee shop and craft beer bar. The best of both worlds! <br>
-              I started learning to build websites for fun, and to learn something new. Then I saw how many people want and need their own website. So I set out to build
-              the cleanest looking, easiest to use websites that I could. </p>
-          </div>
-
-        </div>
-      </div>
+  <section class="wrapper">
+    <div class="card">
+      <h1>About Us</h1>
+      <p>Nicktrition is a fitness and nutrition company founded by Nick Whiteman, AKA Big Nick.
+        With a wealth of professional qualifications from courses run by leading experts from around the world. This, coupled with
+        his personal experience of training track athletes, celebrities and also playing semi-professional rugby in Germany, allows
+        Nick to provide the highest professional service to all who work with him.
+      <br>
+    There are no shortcuts or fad diets here. Only science-backed plans that always put long term health at the forefront of
+    the goal.
+  </p>
     </div>
-
   </section>
 
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer-div">
+  <footer>
 
-      <p class="footer-text">Find me here:</p>
+    <p>Copyright © Nicktrition 2021</p>
 
-      <a href="https://www.twitter.com/dannyheyes">
-        <img class="social-icon" src="images/icons/twitter.png" alt="">
+    <div class="icon-div">
+      <a href="https://instagram.com/nicktrition_">
+        <img class="icon i-instagramm" src="images/instagram.svg" alt="">
       </a>
-      <a href="https://www.instagram.com/dannyheyes">
-        <img class="social-icon" src="images/icons/instagram.png" alt="">
+      <a href="https://twitter.com/nicktrition_">
+        <img class="icon i-twitter" src="images/twitter.svg" alt="">
       </a>
-      <a href="https://www.github.com/dannyheyes">
-        <img class="social-icon" src="images/icons/github.png" alt="">
+      <a href="https://www.youtube.com/channel/UCau8OQsoCjcFw1c-Sggid4w">
+        <img class="icon i-youtube" src="images/youtube.svg" alt="">
       </a>
-      <a href="https://www.dribbble.com/dannyheyes">
-        <img class="social-icon" src="images/icons/dribbble.png" alt="">
-      </a>
-
-      <p class="footer-text">© Danny Heyes - 2020</p>
-
     </div>
 
-  </section>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </footer>
+
+
+  <script src="app.js" charset="utf-8"></script>
+
+  </script>
 </body>
 
 </html>
