@@ -75,6 +75,10 @@ nav {
 
 /* Hero Styling */
 
+main {
+  height: 85vh;
+}
+
 .wrapper {
   height: 90vh;
   background: linear-gradient(var(--primary) 40%, var(--bg-color) 40%);
@@ -134,7 +138,6 @@ nav {
 .projects {
   min-height: 150vh;
   position: relative;
-  bottom: 5vh;
 }
 
 .projects h2 {
