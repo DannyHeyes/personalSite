@@ -46,6 +46,18 @@ nav {
 .nav-links li {
   position: relative;
   bottom: 5%;
+  opacity: 0;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .nav-links a {
@@ -74,6 +86,11 @@ nav {
 }
 
 /* Hero Styling */
+
+main {
+  height: 85vh;
+  overflow: hidden;
+}
 
 .wrapper {
   height: 90vh;
@@ -133,6 +150,7 @@ nav {
 
 .projects {
   min-height: 150vh;
+  position: relative;
 }
 
 .projects h2 {
@@ -152,7 +170,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50%;
-  margin: 15px 0;
+  margin: 20px 0;
   box-shadow: 0 19px 69px -16px rgba(0, 0, 0, 0.19);
 }
 
@@ -170,11 +188,35 @@ nav {
   overflow: hidden;
   font-size: 1.5em;
   font-weight: 700;
-  padding-left: 2%;
+  margin-left: 5%;
   padding-top: 3%;
+}
+
+.card p {
+  width: 90%;
+  margin-left: 5%;
 }
 
 .launch {
   background: white;
   border: none;
+  border-radius: 10px;
+  width: 140px;
+  height: 40px;
+  font-weight: 700;
+  box-shadow: 0 5px 40px 2px rgba(0, 0, 0, 0.1);
+  margin-left: 5%;
+}
+
+.launch img {
+  width: 15%;
+  float: left;
+  margin-left: 10%;
+}
+
+.github-link {
+  color: gray;
+  text-decoration: underline;
+  margin-left: 5%;
+  padding-top: 20px;
 }
