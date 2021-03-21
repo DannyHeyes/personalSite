@@ -107,7 +107,7 @@ nav {
   font-size: 1.1em;
   position: relative;
   bottom: 12%;
-  right: 8%;
+  right: 8.5%;
   overflow: hidden;
 }
 
@@ -132,7 +132,7 @@ nav {
 /* Projects Section */
 
 .projects {
-  min-height: 200vh;
+  min-height: 150vh;
 }
 
 .projects h2 {
@@ -143,7 +143,7 @@ nav {
 
 .card {
   width: 90%;
-  height: 40%;
+  height: 50vh;
   background: var(--bg-color);
   border-radius: 15px;
   border: none;
