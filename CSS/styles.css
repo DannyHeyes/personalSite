@@ -1,145 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #f1f9f5;
+  --primary: #74c69d;
+  --muted: #a6dac0;
+}
 
 body {
-  background-color: #F2F7F5;
-  animation: fadeInAnimation ease 2s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;
+  font-family: "Tajawal", sans-serif;
+  background: var(--bg-color);
 }
 
-@keyframes fadeInAnimation {
-0% {
-    opacity: 0;
-    transform: translateY(60px);
-}
-100% {
-    opacity: 1;
-    transform: translateY(0px);
- }
-}
+/* NavBar Styling */
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-  height: 100vh;
+nav {
   width: 100vw;
+  height: 10vh;
+  background: var(--primary);
 }
 
-.main-image {
-  height: 70vh;
-  background: url('../images/comingSoonCropped.jpeg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  top: 15vh;
-  right: 2vw;
-
-}
-
-.title {
-  position: relative;
-  left: 3vw;
-  top: 26vh;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 5rem;
-  font-weight: bolder;
-  width: 80%;
-  color: #00473E;
-}
-
-.text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  color: #475D5B;
-  position: relative;
-  top: 30vh;
-  left: 3vw;
-  line-height: 1.9;
-}
-
-a.text {
-  position: relative;
-  top: 34vh;
-  text-decoration: none;
-  color: #475D5B;
-}
-
-a.text:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0.5px;
-  bottom: 0;
-  left: 0;
-  background-color: #475D5B;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-}
-
-a.text:hover:before {
-  visibility: visible;
+.nav-links {
+  background: var(--primary);
+  height: 0vh;
   width: 100%;
+  position: absolute;
+  top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 2;
+  transition: height 0.5s ease;
 }
 
-.line-break {
-  visibility: hidden;
+.activeLinks {
+  height: 90vh;
 }
 
-@media only screen and (min-width: 319px) and (max-width: 991px) {
-  .main-image {
-    position: relative;
-    top: 3vh;
-    left: 0;
-  }
-
-  .title {
-    position: relative;
-    top: 5vh;
-    left: 0;
-  }
-
-  .text {
-    width: 80%;
-    position: relative;
-    top: 6vh;
-    left: 0;
-  }
-
-  a.text {
-    position: relative;
-    top: 7vh;
-    padding-bottom: 40px;
-    line-height: 1.9;
-  }
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
 }
 
-@media only screen and (min-width: 319px) and (max-width: 450px) {
-  .main-image {
-    height: 50vh;
-    width: 90vw;
-    position: relative;
-    left: 0;
-  }
-
-  .main-text {
-    width: 95vw;
-  }
-
-  .title {
-    font-size: 3rem;
-  }
-
-  .container {
-    overflow-x: hidden;
-  }
+.burger {
+  float: right;
+  margin-right: 5%;
+  margin-top: 5%;
+  transition: transform 0.3s ease;
 }
 
-@keyframes loadingFade {
-  from{
-    opacity: 0;
-    transform: translateY(50px)
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0px);
-  }
+.burgerClick {
+  transform: rotate(90deg);
+}
+
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  margin: 5px;
+}
+
+/* Hero Styling */
+
+.color {
+  height: 40vh;
+  width: 100%;
+  background: var(--primary);
+  position: absolute;
+  top: 10vh;
+}
+
+.wrapper {
+  height: 90vh;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper h1 {
+  font-size: 7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.9;
+}
+
+.wrapper h2 {
+  font-size: 2em;
+  position: relative;
+  right: 7%;
+}
+
+.wrapper p {
+  font-size: 1.1em;
+  position: relative;
+  right: 6%;
+  width: 40%;
+}
+
+.social-div {
+  position: absolute;
+  left: 15%;
+  bottom: 5vh;
+  height: 10%;
+  width: 70%;
+  background: var(--muted);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.social-div a {
+  width: 10%;
+}
+
+.social-div img {
+  width: 100%;
 }
