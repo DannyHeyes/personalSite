@@ -84,6 +84,13 @@ nav {
   align-items: center;
 }
 
+.wrapper h1 {
+  font-size: 7em;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 0.8;
+}
+
 .social-icons {
   width: 70%;
   height: 10%;
