@@ -91,7 +91,7 @@ nav {
   line-height: 0.8;
   padding-top: 30px;
   position: relative;
-  bottom: 10%;
+  bottom: 8%;
 }
 
 .wrapper h2 {
@@ -99,6 +99,13 @@ nav {
   position: relative;
   right: 5%;
   bottom: 10%;
+}
+
+.wrapper p {
+  font-size: 1.1em;
+  position: relative;
+  bottom: 10%;
+  right: 10%;
 }
 
 .social-icons {
