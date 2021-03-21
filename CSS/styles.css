@@ -133,6 +133,8 @@ nav {
 
 .projects {
   min-height: 150vh;
+  position: relative;
+  bottom: 5vh;
 }
 
 .projects h2 {
