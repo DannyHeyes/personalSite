@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #f1f9f5;
+  --primary: #74c69d;
+  --muted: #a6dac0;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  background: var(--bg-color);
+}
+
+/* NavBar Styling */
+
+nav {
+  width: 100vw;
+  height: 10vh;
+  background: var(--primary);
+  z-index: 1;
+}
+
+.nav-links {
+  background: var(--primary);
+  height: 0vh;
+  width: 100%;
+  position: absolute;
+  top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+  transition: height 0.5s ease;
+}
+
+.activeLinks {
+  height: 90vh;
+}
+
+.nav-links li {
+  position: relative;
+  bottom: 5vh;
+  opacity: 0;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.burger {
+  float: right;
+  margin-right: 5%;
+  margin-top: 5%;
+  transition: transform 0.3s ease;
+}
+
+.burgerClick {
+  transform: rotate(90deg);
+}
+
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  margin: 5px;
+}
