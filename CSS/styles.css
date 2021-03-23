@@ -164,7 +164,9 @@ main {
 
 .card {
   width: 90%;
+
   max-height: 50vh;
+
   background: var(--bg-color);
   border-radius: 15px;
   border: none;
@@ -207,6 +209,7 @@ main {
   margin-left: 5%;
   line-height: 1.2;
   font-size: 0.9rem;
+
 }
 
 .launch {
