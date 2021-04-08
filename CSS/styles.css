@@ -177,6 +177,7 @@ main {
   grid-template-rows: 45% 55%;
   margin: 30px auto;
   box-shadow: 0 19px 69px -16px rgba(0, 0, 0, 0.19);
+  overflow: hidden;
 }
 
 .card:hover {
@@ -255,12 +256,11 @@ main {
 }
 
 .cta-card h4 {
-  width: 75%;
-  font-size: 1.5em;
+  width: 90%;
+  font-size: 1.3em;
   padding: 10px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .cta-btn {
