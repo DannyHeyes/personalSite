@@ -385,7 +385,11 @@ footer {
 
   nav {
     height: 15vh;
-    background: linear-gradient(90deg, var(--primary) 50%, var(--bg-color) 50%);
+    background: linear-gradient(
+      90deg,
+      var(--primary) 49.5%,
+      var(--bg-color) 49.5%
+    );
   }
 
   .nav-links {
