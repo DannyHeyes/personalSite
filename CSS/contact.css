@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #f1f9f5;
+  --primary: #74c69d;
+  --muted: #a6dac0;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  background: var(--bg-color);
+  overflow: hidden;
+}
+
+/* NavBar Styling */
+
+nav {
+  width: 100vw;
+  height: 10vh;
+  background: var(--primary);
+  z-index: 1;
+}
+
+.nav-links {
+  background: var(--primary);
+  height: 0vh;
+  width: 100%;
+  position: absolute;
+  top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+  transition: height 0.5s ease;
+}
+
+.activeLinks {
+  height: 90vh;
+}
+
+.nav-links li {
+  position: relative;
+  bottom: 5vh;
+  opacity: 0;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.burger {
+  float: right;
+  margin-right: 5%;
+  margin-top: 5%;
+  transition: transform 0.3s ease;
+}
+
+.burgerClick {
+  transform: rotate(90deg);
+}
+
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  margin: 5px;
+}
+
+/* Content Styling */
+
+main {
+  padding-top: 10%;
+}
+
+main h2 {
+  margin-left: 5%;
+}
+
+main p {
+  margin: 5% 0 5% 5%;
+  width: 80%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: var(--muted);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+  font-family: "Tajawal", sans-serif;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Tajawal", sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+#status {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#status.success {
+  background-color: rgb(211, 250, 153);
+  color: green;
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: rgb(252, 252, 252);
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* Footer Styling */
+
+footer {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 20vh;
+  background: var(--muted);
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.explore h5 {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  margin-left: 40px;
+}
+
+.explore a {
+  color: gray;
+  font-size: 0.8em;
+  margin-left: 40px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.attribution {
+  color: gray;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+}
+
+/* SMall Breakpoint 450px */
+
+@media screen and (min-width: 450px) {
+  .explore {
+    margin-left: 20%;
+  }
+
+  .attribution {
+    justify-content: center;
+  }
+}
+
+/* Medium Breakpoint 650px */
+
+@media screen and (min-width: 650px) {
+  /* Content Styling */
+  main h2 {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  main p {
+    width: 70%;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+
+  .container {
+    width: 70%;
+    max-width: 500px;
+    margin-bottom: 50px;
+  }
+
+  /* Footer Styling */
+  .explore {
+    margin-left: 50%;
+  }
+}

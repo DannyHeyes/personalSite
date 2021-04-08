@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="./CSS/contact.css">
+</head>
+<body>
+
+    <!-- Nav Styling -->
+
+    <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+    
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+    
+          <li>
+            <a href="#">Projects</a>
+          </li>
+        </ul>
+    
+        <div class="burger">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </nav>
+
+      <main>
+          <h2>Get in touch!</h2>
+          <p>Have an exciting project that you think I'd love? Drop me a message with a few of the details and lets make it happen! </p>
+
+          <div class="container">
+            <form id="my-form" action="https://formspree.io/f/xqkwzrej" method="POST">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="Email">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+              </div>
+
+              <button type="submit">Submit Message</button>
+
+              <div id="status"></div>
+          </div>
+
+      </main>
+
+      <footer>
+
+        <div class="explore">
+          <h5>Explore</h5>
+          <a href="about.html">About</a>
+          <a href="">Projects</a>
+          <a href="">Contact</a>
+        </div>
+    
+       <div class="attribution">
+        <p>Copyright © - Danny Heyes 2021  </p>
+       </div>
+      
+      </footer>
+    
+
+    <script src="./contact.js"></script>
+</body>
+</html>

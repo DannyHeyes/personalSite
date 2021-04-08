@@ -84,3 +84,80 @@ nav {
   background-color: black;
   margin: 5px;
 }
+
+/* Content Styling */
+
+.wrapper {
+  height: 70vh;
+  grid-template-rows: 40% 50%;
+}
+
+.profile-img-div {
+  height: 50%;
+}
+
+.profile-img {
+  width: 30%;
+  position: absolute;
+  left: 35%;
+  top: 17%;
+}
+
+.bg-blob {
+  width: 70%;
+  position: relative;
+  left: 17%;
+  bottom: 15%;
+}
+
+.profile p {
+  width: 80%;
+  position: relative;
+  left: 5%;
+  line-height: 1.3;
+  font-size: 0.9em;
+}
+
+/* Footer Styling */
+
+footer {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 20vh;
+  background: var(--muted);
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.explore h5 {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  margin-left: 40px;
+}
+
+.explore a {
+  color: gray;
+  font-size: 0.8em;
+  margin-left: 40px;
+  text-decoration: none;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.attribution p {
+  position: relative;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7em;
+  color: gray;
+}
