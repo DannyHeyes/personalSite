@@ -132,6 +132,7 @@ main {
 .social-icons {
   width: 70%;
   height: 10%;
+  max-height: 200px;
   background: var(--muted);
   display: flex;
   align-items: center;
@@ -161,7 +162,8 @@ main {
 .projects h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-left: 5%;
+  max-width: 850px;
+  margin: 20px auto;
   overflow: hidden;
 }
 
@@ -218,17 +220,17 @@ main {
   border-radius: 10px;
   width: 150px;
   height: 40px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   box-shadow: 0 5px 40px 2px rgba(0, 0, 0, 0.1);
-  margin: 5px 20px;
+  margin: 5px 10px;
   padding-top: 5px;
 }
 
 .launch img {
   width: 20px;
   float: left;
-  margin-left: 25px;
+  margin-left: 15px;
   margin-bottom: 5px;
 }
 
@@ -257,8 +259,8 @@ main {
 }
 
 .cta-card h4 {
-  width: 90%;
-  font-size: 1.6em;
+  width: 85%;
+  font-size: 1.2em;
   padding: 10px;
   font-weight: 700;
   text-align: center;
@@ -315,6 +317,7 @@ footer {
   font-size: 0.8em;
   margin-left: 40px;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .attribution {
@@ -551,11 +554,21 @@ footer {
     height: 20%;
     width: 40%;
     margin-top: 10px;
+    margin-left: 25px;
     padding-top: 5px;
+    font-size: 18px;
+  }
+
+  .launch img {
+    margin-left: 25px;
   }
 
   .cta-card {
     max-height: 250px;
+  }
+
+  .cta-card h4 {
+    font-size: 1.6em;
   }
 
   /* Footer Styling */
@@ -566,5 +579,17 @@ footer {
   .explore a,
   .explore h5 {
     margin-left: 30%;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .social-icons {
+    left: 90%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .social-icons {
+    left: 80%;
   }
 }

@@ -89,7 +89,7 @@ nav {
 /* Content Styling */
 
 main {
-  padding-top: 10%;
+  padding-top: 50px;
 }
 
 main h2 {
@@ -144,6 +144,8 @@ button[type="submit"] {
   border: none;
   border-radius: 5px;
   font-family: "Tajawal", sans-serif;
+  background: var(--bg-color);
+  font-size: 1em;
 }
 
 button:focus {
@@ -264,5 +266,38 @@ footer {
   /* Footer Styling */
   .explore {
     margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  nav {
+    height: 15vh;
+    background: inherit;
+  }
+
+  .nav-links {
+    height: 10vh;
+    min-height: 80px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+
+    background-color: var(--primary);
+  }
+
+  .nav-links li {
+    opacity: 1;
+    bottom: 0;
+  }
+
+  .nav-links a {
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+
+  .burger {
+    display: none;
   }
 }
