@@ -70,7 +70,7 @@ nav {
 .burger {
   float: right;
   margin-right: 5%;
-  margin-top: 3%;
+  margin-top: 5%;
   transition: transform 0.3s ease;
 }
 
@@ -198,18 +198,19 @@ footer {
 
   nav {
     height: 15vh;
-    background: inherit;
+    background: var(--primary);
   }
 
   .nav-links {
-    height: 10vh;
+    height: 15vh;
     min-height: 80px;
-    width: 100%;
+    width: 60%;
+    left: 20%;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     top: 0;
-    background-color: var(--primary);
+    background-color: inherit;
   }
 
   .nav-links li {

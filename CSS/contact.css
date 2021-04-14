@@ -272,19 +272,19 @@ footer {
 @media screen and (min-width: 900px) {
   nav {
     height: 15vh;
-    background: inherit;
+    background: var(--primary);
   }
 
   .nav-links {
-    height: 10vh;
+    height: 15vh;
     min-height: 80px;
-    width: 100%;
+    width: 60%;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     top: 0;
-
-    background-color: var(--primary);
+    left: 20%;
+    background-color: inherit;
   }
 
   .nav-links li {

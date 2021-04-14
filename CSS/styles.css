@@ -116,7 +116,7 @@ main {
 .wrapper h2 {
   font-size: 2.4em;
   position: relative;
-  right: 4%;
+  right: 3%;
   bottom: 10%;
   overflow: hidden;
 }
@@ -350,11 +350,11 @@ footer {
   /* Hero Styling */
 
   .wrapper h2 {
-    right: 3%;
+    right: 2%;
   }
 
   .wrapper p {
-    right: 6%;
+    right: 5%;
   }
 
   .social-icons a {
@@ -398,6 +398,7 @@ footer {
 
   .nav-links {
     height: 15vh;
+    min-height: 80px;
     width: 60%;
     flex-direction: row;
     justify-content: space-evenly;
@@ -438,11 +439,11 @@ footer {
   }
 
   .wrapper h2 {
-    right: 2%;
+    right: 1%;
   }
 
   .wrapper p {
-    right: 4%;
+    right: 2.5%;
   }
 
   .social-icons {
@@ -578,7 +579,11 @@ footer {
 
   .explore a,
   .explore h5 {
-    margin-left: 30%;
+    margin-left: 60%;
+  }
+
+  .attribution {
+    margin-top: 3%;
   }
 }
 
