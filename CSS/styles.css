@@ -163,6 +163,7 @@ main {
 .projects h2 {
   font-size: 2.5rem;
   font-weight: 700;
+  width: 90%;
   max-width: 850px;
   margin: 20px auto;
   overflow: hidden;

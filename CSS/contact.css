@@ -120,8 +120,8 @@ main p {
 .form-group textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid rgba(128, 128, 128, 0.199);
   margin-top: 5px;
+  border: none;
   font-family: "Tajawal", sans-serif;
   background-color: var(--bg-color);
   border-radius: 5px;
